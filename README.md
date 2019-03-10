@@ -15,7 +15,11 @@ gt
 
 ## **Instalación**
 
-Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con 
+Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con npm y poder agregar todas la dependencias
+
+```sh
+    $ npm i --save-dev webpack webpack-cli
+```
 
 ```javascript
     // Este repositorio está dedicado para christian , ya que su repositorio me sirve como referencia para mi propia documentación
