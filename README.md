@@ -1,5 +1,7 @@
 # **¿Qué es Webpack?**
 
+![WebPack](https://github.com/pystudent1913/How-to-Webpack/raw/master/imgs/que-es-webpack.jpg)
+
 Mas de ser un empaquetar de **Bundler** es un automatizador de tareas en general para el desarrollo web.
 
 ## **¿Pero que carajos es un bundler?**
@@ -28,6 +30,10 @@ Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con
 ***References sobre Bundle***
 
 - [Bundle-1](https://www.arquitecturajava.com/que-es-un-javascript-bundle/)
+
+***Referencias sobre WebPack***
+
+- [Webpack vs grunt vs grunt](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners)
 
 ```python
     # Autor : Thom Maurick Roman Aguilar
