@@ -22,10 +22,16 @@ Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con
     > npm i --save-dev webpack webpack-cli
 ```
 
-```javascript
-    /* Este repositorio está inspirado en la documentación de christian .
-    https://github.com/pystudent1913/How-to-Webpack*/
-```
+## **Conocimientos previos antes de coderar y hacer la futura configuración**
+
+- Nos ayudará para la transformación de nuestros modulos , cabe recalcar que este bundler solo se usara en el area de desarrollo mas nos en producción
+
+## **Configuración**
+
+- *Entrypoints :* Multiples puntos de entrada a las aplicaciones
+- *Output :* Ya definido el archivo que estara observando debemos indicarles donde se alojara el archivo y como se llamará , para que el navegador sepa de donde leer todo el bundle
+- *Loaders :* Nos ayudarán a cargar todo tipo de formato de archivos
+- *Plugins :* Extenderemos las habilidades de webpack(minificacion)
 
 ***References sobre Bundle***
 
@@ -34,6 +40,11 @@ Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con
 ***Referencias sobre WebPack***
 
 - [Webpack vs grunt vs grunt](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners)
+
+```javascript
+    /* Este repositorio está inspirado en la documentación de christian .
+    https://github.com/pystudent1913/How-to-Webpack*/
+```
 
 ```python
     # Autor : Thom Maurick Roman Aguilar
