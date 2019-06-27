@@ -28,10 +28,10 @@ Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con
 
 ## **Configuración**
 
-- *Entrypoints :* Multiples puntos de entrada a las aplicaciones
-- *Output :* Ya definido el archivo que estara observando debemos indicarles donde se alojara el archivo y como se llamará , para que el navegador sepa de donde leer todo el bundle
-- *Loaders :* Nos ayudarán a cargar todo tipo de formato de archivos
-- *Plugins :* Extenderemos las habilidades de webpack(minificacion)
+- **Entrypoints :** Multiples puntos de entrada a las aplicaciones
+- **Output :** Ya definido el archivo que estara observando debemos indicarles donde se alojara el archivo y como se llamará , para que el navegador sepa de donde leer todo el bundle
+- **Loaders :** Nos ayudarán a cargar todo tipo de formato de archivos
+- **Plugins :** Extenderemos las habilidades de webpack(minificacion)
 
 ***References sobre Bundle***
 
