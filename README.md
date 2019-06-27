@@ -24,7 +24,7 @@ Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con
 
 ## **Conocimientos previos antes de coderar y hacer la futura configuración**
 
-- Nos ayudará para la transformación de nuestros modulos , cabe recalcar que este bundler solo se usara en el area de desarrollo mas nos en producción
+- Nos ayudará para la transformación de nuestros modulos , cabe recalcar que este bundler solo se usara en el area de desarrollo mas no en producción
 
 ## **Configuración**
 
