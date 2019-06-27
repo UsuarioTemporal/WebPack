@@ -12,21 +12,22 @@ Mas de ser un empaquetar de **Bundler** es un automatizador de tareas en general
     peticiones HTTP.*/
 ```
 
-[bundle](https://www.arquitecturajava.com/que-es-un-javascript-bundle/)
-
 ## **Instalación**
 
 Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con npm y poder agregar todas la dependencias
 
 ```sh
-    $ npm i --save-dev webpack webpack-cli
+    > npm i --save-dev webpack webpack-cli
 ```
 
 ```javascript
-    /* Este repositorio está dedicado para christian , ya que su
-    repositorio me sirve como referencia para mi propia documentación
+    /* Este repositorio está inspirado en la documentación de christian .
     https://github.com/pystudent1913/How-to-Webpack*/
 ```
+
+***References sobre Bundle***
+
+- [Bundle-1](https://www.arquitecturajava.com/que-es-un-javascript-bundle/)
 
 ```python
     # Autor : Thom Maurick Roman Aguilar
