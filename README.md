@@ -5,7 +5,6 @@ Mas de ser un empaquetar de **Bundler** es un automatizador de tareas en general
 ## **¿Pero que carajos es un bundler?**
 
 ![bundle](https://www.arquitecturajava.com/wp-content/uploads/JavaScriptBundleBrowserifyDiagram.png)
-gt
 
 ```javascript
     /* Un bundle sirve para agrupar todos los ficheros de JavaScript
