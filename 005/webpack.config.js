@@ -1,3 +1,4 @@
+const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     // los loaders se guardaran en modules
     module:{
@@ -10,7 +11,22 @@ module.exports = {
                 use : {
                     loader:'babel-loader'
                 }
+            },
+            {
+                test:/.(html)$/,
+                use:[
+                    {
+                        loader:'html-loader',
+                        options:{minimize:true}
+                    }
+                ]
             }
         ]
-    }
+    },
+    plugins:[
+        new htmlWebpackPlugin({
+            template:'./src/template.html',
+            filename:'./index.html'
+        })
+    ]
 }
