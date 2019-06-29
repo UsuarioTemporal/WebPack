@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"webpack --mode development"
+    "dev":"webpack --mode development",
+    "build":"webpack --mode production",
+    "dev-babel":"webpack --mode development --module-bind js=babel-loader",
+    "build-babel":"webpack --mode production --module-bind js=babel-loader"
   },
   "keywords": [],
   "author": "",
