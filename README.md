@@ -35,7 +35,7 @@ Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con
 
 ***Referencias sobre WebPack***
 
-- [Webpack vs grunt vs grunt](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners)
+- [Webpack vs gulp vs grunt](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners)
 - [Documentación oficial](https://webpack.js.org/concepts/)
 
 ```javascript
