@@ -38,9 +38,9 @@ Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con
     $ npm install -D clean-webpack-plugin
 ````
 
-Este plugin se usará cuando corra una ejecución en producción pueda limpiar la carpeta de plublicación. Entonces cada vez que nosotros
-hagamos un build nuevo para que no halla confusión de archivos de la producción anterior este plugin lo que hará es borrar todo lo que
-este en la carpeta de distribución `dist/`
+Este plugin se usará cuando corra una ejecución en producción y se pueda limpiar la carpeta de publicación. Entonces cada vez que
+nosotros hagamos un build nuevo y no halla confusión de archivos de la producción anterior, este plugin lo que hará es borrar
+todo lo que este en la carpeta de distribución `dist/`
 
 #### **file-loader**
 
@@ -48,6 +48,8 @@ este en la carpeta de distribución `dist/`
     # instalación
     $ npm install -D file-loader
 ````
+
+Si yo necesito usar arhivos tipograficos o una imagen , ete plugin sabra donde encontrar el path de ese archivo
 
 ***References sobre Bundle***
 
