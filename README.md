@@ -29,6 +29,26 @@ Para la intalacion de webpack se necesitara de `Node.js` para poder trabajar con
 - **Loaders :** Nos ayudarán a cargar todo tipo de formato de archivos
 - **Plugins :** Extenderemos las habilidades de webpack(minificacion)
 
+### **Algunos plugins muy dificiles de entender**
+
+#### **clean-webpack-plugin**
+
+````sh
+    # instalación
+    $ npm install -D clean-webpack-plugin
+````
+
+Este plugin se usará cuando corra una ejecución en producción pueda limpiar la carpeta de plublicación. Entonces cada vez que nosotros
+hagamos un build nuevo para que no halla confusión de archivos de la producción anterior este plugin lo que hará es borrar todo lo que
+este en la carpeta de distribución `dist/`
+
+#### **file-loader**
+
+````sh
+    # instalación
+    $ npm install -D file-loader
+````
+
 ***References sobre Bundle***
 
 - [Bundle-1](https://www.arquitecturajava.com/que-es-un-javascript-bundle/)
