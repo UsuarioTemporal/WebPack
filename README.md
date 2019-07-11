@@ -49,7 +49,16 @@ todo lo que este en la carpeta de distribución `dist/`
     $ npm install -D file-loader
 ````
 
-Si yo necesito usar arhivos tipograficos o una imagen , ete plugin sabra donde encontrar el path de ese archivo
+Si yo necesito usar archivos tipograficos o una imagen , este plugin sabra donde encontrar el path de ese archivo
+
+#### **image-webpack-loader**
+
+````sh
+    #instalación
+    $ npm install -D image-webpack-loader
+````
+
+cargador que me permitira optimizar las imagenes para la carpeta de distribucion
 
 ***References sobre Bundle***
 
