@@ -16,7 +16,7 @@ module.exports={
             },
             {
                 test:/\.(html)$/,
-                use:[
+                use:[ // esto se pudo simplificar a  'html-loader?minimize=true' o 'html-loader?minimize'
                     {
                         loader:'html-loader',
                         options:{minimize:true}
@@ -26,9 +26,10 @@ module.exports={
             {
                 test:/\.(css|scss)$/,
                 use:[
-                    'style-loader',
-                    MiniCssExtracyPlugin.loader,
-                    'css-loader?minimize=true&sourceMap',
+                    'style-loader', // nos permitira crear cadenas de texto css es decir el css que este en el .html <style>
+                    MiniCssExtracyPlugin.loader, // para poder extraer los estilos , es decir cuando se inyecta los estilos dentro js
+                                                // sacar las hojas de estilos 
+                    'css-loader?minimize=true&sourceMap=true',//?minimize&sourceMap
                     {
                         loader:'postcss-loader',
                         options:{
