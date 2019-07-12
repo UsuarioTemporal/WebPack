@@ -61,19 +61,23 @@ Si yo necesito usar archivos tipograficos o una imagen , este plugin sabra donde
 cargador que me permitira optimizar las imagenes para la carpeta de distribucion
 
 > **¿Qué es Source Map?**<br>
-> asd
+> Cuando se comienza a configurar ls cargadores en las reglas de<br>
+> webpack, la propiedad loaders genera transformaciones al código<br> 
+> programado por lo cual es uno de los motivos del error al hacer<br>
+> debugging. Este es el momento en el que usamos la propiedad <br>
+> SourceMap que realizara un mapeo entre el original y la copia.
 
-## **Fuentes :**
+## ***Fuentes :***
 
 ***References sobre Bundle***
 
-- [Bundle-1](https://www.arquitecturajava.com/que-es-un-javascript-bundle/)
+- [*Bundle-1*](https://www.arquitecturajava.com/que-es-un-javascript-bundle/)
 
 ***Referencias sobre WebPack***
 
-- [Webpack vs gulp vs grunt](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners)
-- [Documentación oficial](https://webpack.js.org/concepts/)
-- [Source Map](https://openwebinars.net/blog/webpack-que-es-source-maps/)
+- [*Webpack vs gulp vs grunt*](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners)
+- [*Documentación oficial*](https://webpack.js.org/concepts/)
+- [*Source Map*](https://openwebinars.net/blog/webpack-que-es-source-maps/)
 
 ```javascript
     /* Este repositorio está inspirado en la documentación de christian .
