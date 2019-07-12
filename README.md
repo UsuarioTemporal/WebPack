@@ -60,12 +60,13 @@ Si yo necesito usar archivos tipograficos o una imagen , este plugin sabra donde
 
 cargador que me permitira optimizar las imagenes para la carpeta de distribucion
 
-> **¿Qué es Source Map?**<br>
-> Cuando se comienza a configurar ls cargadores en las reglas de<br>
-> webpack, la propiedad loaders genera transformaciones al código<br> 
-> programado por lo cual es uno de los motivos del error al hacer<br>
-> debugging. Este es el momento en el que usamos la propiedad <br>
-> SourceMap que realizara un mapeo entre el original y la copia.
+## **¿Qué es Source Map?**
+
+Cuando se comienza a configurar ls cargadores en las reglas de
+webpack, la propiedad loaders genera transformaciones al código 
+programado por lo cual es uno de los motivos del error al hacer
+debugging. Este es el momento en el que usamos la propiedad 
+SourceMap que realizara un mapeo entre el original y la copia.
 
 ## ***Fuentes :***
 

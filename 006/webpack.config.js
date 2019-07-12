@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin'),
     MiniCssExtracyPlugin = require('mini-css-extract-plugin'),
     CleanWebPackPlugin = require('clean-webpack-plugin'),
-    autoprefixer = require('autoprefixer')
+    autoprefixer_ = require('autoprefixer')
 
 module.exports={
     devtool:'source-map',
@@ -22,7 +22,8 @@ module.exports={
                         options:{minimize:true}
                     }
                 ]
-            },
+            }
+            ,
             {
                 test:/\.(css|scss)$/,
                 use:[
@@ -37,10 +38,10 @@ module.exports={
                                 browser:['last 2 versions']
                             },
                             sourceMap:true,
-                            plugins:()=>[autoprefixer]
+                            plugins:()=>[autoprefixer_]
                         }
                     },
-                    'sass-loader?outputStyle=compress&sourceMap'
+                    'sass-loader?outputStyle=compressed&sourceMap'
                 ]
             }
         ]
