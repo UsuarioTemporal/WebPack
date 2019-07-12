@@ -31,7 +31,7 @@ module.exports={
                                                 // sacar las hojas de estilos 
                     'css-loader?minimize=true&sourceMap=true',//?minimize&sourceMap
                     {
-                        loader:'postcss-loader',
+                        loader:'postcss-loader', //es una herramienta de pos compilacion que me permite transformar codigo css mediante js
                         options:{
                             autoprefixer:{
                                 browser:['last 2 versions']
