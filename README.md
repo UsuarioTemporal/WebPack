@@ -60,6 +60,11 @@ Si yo necesito usar archivos tipograficos o una imagen , este plugin sabra donde
 
 cargador que me permitira optimizar las imagenes para la carpeta de distribucion
 
+> **¿Qué es Source Map?**<br>
+> asd
+
+## **Fuentes :**
+
 ***References sobre Bundle***
 
 - [Bundle-1](https://www.arquitecturajava.com/que-es-un-javascript-bundle/)
@@ -68,6 +73,7 @@ cargador que me permitira optimizar las imagenes para la carpeta de distribucion
 
 - [Webpack vs gulp vs grunt](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners)
 - [Documentación oficial](https://webpack.js.org/concepts/)
+- [Source Map](https://openwebinars.net/blog/webpack-que-es-source-maps/)
 
 ```javascript
     /* Este repositorio está inspirado en la documentación de christian .
