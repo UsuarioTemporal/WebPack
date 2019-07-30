@@ -1,1 +1,1 @@
-alert('asdasdas')
+import './styles/main.scss'

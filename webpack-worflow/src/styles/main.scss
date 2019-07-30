@@ -1,0 +1,13 @@
+$red-background :red ;
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background: $red-background;
+}
