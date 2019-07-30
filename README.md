@@ -79,6 +79,8 @@ SourceMap que realizara un mapeo entre el original y la copia.
 - [*Webpack vs gulp vs grunt*](https://da-14.com/blog/gulp-vs-grunt-vs-webpack-comparison-build-tools-task-runners)
 - [*Documentación oficial*](https://webpack.js.org/concepts/)
 - [*Source Map*](https://openwebinars.net/blog/webpack-que-es-source-maps/)
+- [*NPX*](https://xavitristancho.pro/blog/que-es-npx)
+- [*NPM vs NPX*](https://medium.com/@sibeeshvenu/npm-vs-npx-f737dea2fb4)
 
 ```javascript
     /* Este repositorio está inspirado en la documentación de christian .
