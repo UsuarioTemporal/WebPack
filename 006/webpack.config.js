@@ -35,9 +35,19 @@ module.exports={
                     'style-loader', // nos permitira crear cadenas de texto css es decir el css que este en el .html <style>
                     MiniCssExtractPlugin.loader, // para poder extraer los estilos , es decir cuando se inyecta los estilos dentro js
                                                 // sacar las hojas de estilos 
-                    // 'css-loader?minimize=true&sourceMap=true',//?minimize&sourceMap
+                    // 'css-loader?minimize',//?minimize&sourceMap
                     'css-loader',
-                    'sass-loader'
+                    'sass-loader',
+                    {
+                        loader:'postcss-loader',
+                        options:{
+                            autoprefixer:{
+                                browser:['last 2 versions']
+                            },
+                            sourceMap:true,
+                            plugins:()=>[autoprefixer_]
+                        }
+                    }
                 ]
             }
         ]
