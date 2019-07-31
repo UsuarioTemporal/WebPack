@@ -37,7 +37,6 @@ module.exports={
                                                 // sacar las hojas de estilos 
                     // 'css-loader?minimize',//?minimize&sourceMap
                     'css-loader',
-                    'sass-loader',
                     {
                         loader:'postcss-loader',
                         options:{
@@ -47,8 +46,45 @@ module.exports={
                             sourceMap:true,
                             plugins:()=>[autoprefixer_]
                         }
-                    }
+                    },
+                    'resolve-url-loader',//una ruta desde la funcion url de css
+                    'sass-loader?outputStyle=compressed&sourceMap'
                 ]
+            },
+            {
+                test: /\.(jpg|png|gif|jpeg|csv|ico)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'img/',
+                        userRelativePath: true
+                    }
+                }]
+            },
+            {
+                loader: 'image-webpack-loader',
+                options: {
+                    mozjpeg: {
+                        progressive: true,
+                        quality: 65
+                    },
+                    // optipng.enabled: false will disable optipng
+                    optipng: {
+                        enabled: true,
+                    },
+                    pngquant: {
+                        quality: '65-90',
+                        speed: 4
+                    },
+                    gifsicle: {
+                        interlaced: false,
+                    },
+                    // the webp option will enable WEBP
+                    webp: {
+                        quality: 75
+                    }
+                }
             }
         ]
     },
