@@ -1,3 +1,4 @@
+@import "variables";
 $red-background :red ;
 
 *,
@@ -9,5 +10,5 @@ $red-background :red ;
     font-family: sans-serif;
 }
 body{
-    background: $red-background;
+    background: $bg-green;
 }
