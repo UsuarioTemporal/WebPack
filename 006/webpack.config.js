@@ -27,14 +27,13 @@ module.exports={
                         options:{minimize:true}
                     }
                 ]
-            }
-            ,
+            },
             {
                 test:/\.(css|scss)$/,
                 use:[
                     'style-loader', // nos permitira crear cadenas de texto css es decir el css que este en el .html <style>
-                    MiniCssExtractPlugin.loader, // para poder extraer los estilos , es decir cuando se inyecta los estilos dentro js
-                                                // sacar las hojas de estilos 
+                    MiniCssExtractPlugin.loader, // para poder extraer los estilos , es decir cuando se inyecta los estilos 
+                                                //dentro js sacar las hojas de estilos 
                     // 'css-loader?minimize',//?minimize&sourceMap
                     'css-loader',
                     {
@@ -52,15 +51,21 @@ module.exports={
                 ]
             },
             {
-                test: /\.(jpg|png|gif|jpeg|csv|ico)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: 'img/',
-                        userRelativePath: true
+                test: /\.(jpe?p|png|gif|svg|ico|webp)$/i, //la i significa que ignora las mayusculas o minusculas
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: './assets/img/',
+                            userRelativePath: true
+                        }
                     }
-                }]
+                ]
+            },
+            {
+                test:/\.(ttf|eot|woff2?|mp4|mp3|txt|xml|pdf)/i,
+                use:'file-loader?name=[name].[ext]&outputPath=./assets/fonts/&userRelativePath'
             },
             {
                 loader: 'image-webpack-loader',
@@ -99,29 +104,3 @@ module.exports={
         })
     ]
 }
-
-// {
-//     loader:'css-loader',
-//     options:{
-//         minimize:true
-//     }
-// },
-// {
-//     loader:'postcss-loader', //es una herramienta de pos compilacion que me permite transformar codigo css mediante js
-//     options:{
-//         autoprefixer:{
-//             browser:['last 2 versions']
-//         },
-//         sourceMap:true,
-//         plugins:()=>[autoprefixer_]
-//     }
-// },
-// 'sass-loader'
-// //'sass-loader?outputStyle=compressed&sourceMap'
-// // {
-// //     loader:'sass-loader',
-// //     options:{
-// //         // outputStyle='compressed',
-// //         sourceMap=true
-// //     }
-// // }
