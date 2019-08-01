@@ -33,6 +33,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^5.0.4",
     "rimraf": "^2.6.3"
   }
 }

@@ -1,7 +1,9 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin'),
     MiniCssExtractPlugin = require('mini-css-extract-plugin'),
     CleanWebPackPlugin = require('clean-webpack-plugin'),
-    autoprefixer_ = require('autoprefixer')
+    autoprefixer_ = require('autoprefixer'),
+    CopyWebpackPlugin = require('copy-webpack-plugin'),
+    path = require('path')
 
 module.exports={
     entry: './src/index.js',
@@ -43,12 +45,13 @@ module.exports={
                                 browser:['last 2 versions']
                             },
                             sourceMap:true,
-                            plugins:()=>[autoprefixer_]
+                            plugins:()=>[autoprefixer_],
+                            publicPath: '../',
                         }
                     },
                     'resolve-url-loader',//una ruta desde la funcion url de css
                     'sass-loader?outputStyle=compressed&sourceMap'
-                ]
+                ],
             },
             {
                 test: /\.(jpe?p|png|gif|svg|ico|webp)$/i, //la i significa que ignora las mayusculas o minusculas
@@ -56,16 +59,17 @@ module.exports={
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[name].[ext]',
-                            outputPath: './assets/img/',
-                            userRelativePath: true
+                            name: 'img/[name].[ext]',
+                            userRelativePath: true,
+                            pathPublic:'./css'
                         }
-                    }
+                    },
+                    'image-webpack-loader?bypassOnDebug'
                 ]
             },
             {
                 test:/\.(ttf|eot|woff2?|mp4|mp3|txt|xml|pdf)/i,
-                use:'file-loader?name=[name].[ext]&outputPath=./assets/fonts/&userRelativePath'
+                use:'file-loader?name=[name].[ext]'
             },
             {
                 loader: 'image-webpack-loader',
@@ -94,13 +98,12 @@ module.exports={
         ]
     },
     plugins:[
-        
+        new MiniCssExtractPlugin({
+            filename: 'css/[name]-styles.css'
+        }),
         new HtmlWebPackPlugin({
             template:'./src/template.html',
             file:'./index.html'
-        }),
-        new MiniCssExtractPlugin({  //primero que saque el codigo css
-            filename: 'css/[name]-styles.css'
         })
     ]
 }

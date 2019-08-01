@@ -1,6 +1,6 @@
-body{background:red}
+body{min-height:100vh;display:flex;flex-direction:column}img{width:600px;height:600px}
 
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;font-family:sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;font-family:sans-serif}html{background-repeat:repeat;background-image:url(img/js-logo.png)}
 
 
 /*# sourceMappingURL=main-styles.css.map*/
